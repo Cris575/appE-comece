@@ -1,7 +1,7 @@
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import { AuthScreen } from "../../screens/Auth";
 import { screensName } from "../../utils";
-import { HomeStack, WishlistStack } from "../stacks";
+import { HomeStack, WishlistStack, CartStack } from "../stacks";
 
 const Tab = createBottomTabNavigator();
 
@@ -20,7 +20,7 @@ export function TabNavigation() {
       />
       <Tab.Screen
         name={screensName.cart.root}
-        component={AuthScreen}
+        component={CartStack}
         options={{ title: "Carrito" }}
       />
       <Tab.Screen
