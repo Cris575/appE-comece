@@ -3,5 +3,5 @@ import { AppNavigation } from "./AppNavigation";
 
 export function RootNavigation() {
   const user = null;
-  return user ? <AppNavigation /> : <AuthScreen />;
+  return user ? <AuthScreen /> : <AppNavigation />;
 }
